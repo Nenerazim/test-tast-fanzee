@@ -1,1 +1,1 @@
-export {default as Footer} from './Component.vue';
+export {default as MovieCard} from './Component.vue';

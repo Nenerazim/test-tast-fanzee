@@ -1,12 +1,12 @@
 <script setup lang="ts">
+import {Header} from '$components/shared/Header';
+import {Footer} from '$components/shared/Footer';
 </script>
 
 <template>
   <div class="application">
-            <slot />
+    <Header />
+    <slot />
+    <Footer />
   </div>
 </template>
-
-<style lang="scss" scoped>
-
-</style>

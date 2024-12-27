@@ -1,22 +1,21 @@
 <svg width="0" height="0" class="hidden">
   <defs>
     <symbol id="clock" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M3.99999 7.83334C5.84094 7.83334 7.33332 6.34095 7.33332 4.5C7.33332 2.65906 5.84094 1.16667 3.99999 1.16667C2.15904 1.16667 0.666656 2.65906 0.666656 4.5C0.666656 6.34095 2.15904 7.83334 3.99999 7.83334Z" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M4 2.5V4.5L5.33333 5.16667" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+      <path stroke="white" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol  id="film" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.60666 1.16667H1.39332C0.991996 1.16667 0.666656 1.49201 0.666656 1.89334V7.10667C0.666656 7.508 0.991996 7.83334 1.39332 7.83334H6.60666C7.00798 7.83334 7.33332 7.508 7.33332 7.10667V1.89334C7.33332 1.49201 7.00798 1.16667 6.60666 1.16667Z" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M2.33334 1.16667V7.83334" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5.66666 1.16667V7.83334" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M0.666656 4.5H7.33332" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M0.666656 2.83333H2.33332" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M0.666656 6.16667H2.33332" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5.66666 6.16667H7.33332" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5.66666 2.83333H7.33332" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+    <symbol id="film" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.82 2H4.18C2.97602 2 2 2.97602 2 4.18V19.82C2 21.024 2.97602 22 4.18 22H19.82C21.024 22 22 21.024 22 19.82V4.18C22 2.97602 21.024 2 19.82 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 2V22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17 2V22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 12H22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 7H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 17H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17 17H22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17 7H22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="stars"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M3.99999 1.16667L5.02999 3.25334L7.33332 3.59001L5.66666 5.21334L6.05999 7.50667L3.99999 6.42334L1.93999 7.50667L2.33332 5.21334L0.666656 3.59001L2.96999 3.25334L3.99999 1.16667Z" stroke="white" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+    <symbol id="stars" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-
   </defs>
 </svg>

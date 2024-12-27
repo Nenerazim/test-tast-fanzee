@@ -1,1 +1,1 @@
-export const modules: string[] = ['@pinia/nuxt', '@nuxt/eslint'];
+export const modules: string[] = ['@nuxt/eslint', '@pinia/nuxt'];

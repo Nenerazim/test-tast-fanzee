@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import {onMounted} from 'vue';
+import type {ImageProps} from '$design/Image/type';
 
-const props = withDefaults(defineProps<{src?: string; alt?: string}>(), {
+const props = withDefaults(defineProps<ImageProps>(), {
   src: 'image/image-not-found.webp',
   alt: 'not-found'
 });
@@ -18,5 +19,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <img :src="srcImg" :alt />
+  <img loading="lazy" :src="srcImg" :alt />
 </template>

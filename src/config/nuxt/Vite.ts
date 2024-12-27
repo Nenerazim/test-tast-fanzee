@@ -2,10 +2,7 @@ import type {ViteConfig} from '@nuxt/schema';
 
 export const vite: ViteConfig = {
   server: {
-    hmr: {
-      host: 'shop-nuxt.local',
-      port: 5174
-    }
+    hmr: true,
   },
   css: {
     preprocessorOptions: {

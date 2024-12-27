@@ -1,2 +1,2 @@
 export * from './CardMovie';
-export * from './DetailMovie'
+export * from './DetailMovie';

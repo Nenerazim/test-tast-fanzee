@@ -1,30 +1,23 @@
-import {ProductRepository} from '$data/repositories/Product';
-import {SearchRequest} from '$domain/http/request/Product/SearchRequest';
-import {QueryBuilder} from '$shared/builders/QueryBuilder';
-import {BaseService} from '$shared/application/services/BaseService';
-import type {ISearchRequest} from '$domain/abstracts/Product';
-import type {IPaginationQuery} from '$shared/domain/abstracts/Query/Pagination';
-import {SearchResponse} from '$domain/http/response/Product';
+import {MovieRepository} from '$data/repositories/Movie';
+import type {IMovieFindAllResponse} from '$domain/abstracts/Movie';
 
-export class ProductService extends BaseService {
-  private productRepository: ProductRepository;
+export class MovieService {
+  private movieRepository: MovieRepository;
 
   constructor() {
-    super();
-    this.productRepository = new ProductRepository();
+    this.movieRepository = new MovieRepository();
   }
 
-  async search(data: Partial<ISearchRequest>, pagination: IPaginationQuery) {
-    const request = new SearchRequest(data);
-    return await this.productRepository
-      .search(QueryBuilder.instance(pagination.page ?? 1, pagination.perPage ?? 10, {'product.vendor_code': request.data.search}))
-      .then((response) => new SearchResponse(response))
-      .catch(this.handleBackendErrors);
+  async getAll() {
+    return await this.movieRepository
+      .getAllMovie()
+      .then((response) => response.data)
+      .catch(() => [] as unknown as IMovieFindAllResponse);
   }
 
   async findOne(id: number) {
-    return await this.productRepository
-      .findOne(id)
+    return await this.movieRepository
+      .findOneMovie(id)
       .then((response) => response.data)
       .catch(() => {
         throw createError({

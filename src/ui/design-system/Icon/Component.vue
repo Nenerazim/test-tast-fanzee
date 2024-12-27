@@ -5,7 +5,7 @@ const className = 'icon';
 
 withDefaults(defineProps<IIconProps>(), {
   svgClass: undefined,
-  color: undefined,
+  color: 'neutral',
   height: 24,
   width: 24,
   strokeWidth: 0
@@ -19,5 +19,6 @@ withDefaults(defineProps<IIconProps>(), {
 </template>
 
 <style lang="scss" scoped>
-@use './style';
+@use 'sass:meta';
+@include meta.load-css('style');
 </style>

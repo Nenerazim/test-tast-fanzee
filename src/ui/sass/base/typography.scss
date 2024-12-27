@@ -1,8 +1,53 @@
+h1 {
+  font-weight: 700;
+  font-size: var(--font_32);
+  @media screen and (max-width: 488px) {
+    font-weight: 500;
+    font-size: var(--font_24);
+  }
+}
+
 h2 {
+  font-weight: 700;
+  font-size: var(--font_28);
+  @media screen and (max-width: 488px) {
+    font-weight: 500;
+    font-size: var(--font_20);
+  }
 }
 
 h3 {
+  font-weight: 700;
+  font-size: var(--font_24);
+  @media screen and (max-width: 488px) {
+    font-weight: 500;
+    font-size: var(--font_18);
+  }
 }
 
-b {
+h4 {
+  font-weight: 700;
+  font-size: var(--font_20);
+  @media screen and (max-width: 488px) {
+    font-weight: 500;
+    font-size: var(--font_16);
+  }
+}
+
+h5 {
+  font-weight: 700;
+  font-size: var(--font_18);
+  @media screen and (max-width: 488px) {
+    font-weight: 500;
+    font-size: var(--font_14);
+  }
+}
+
+h6 {
+  font-weight: 700;
+  font-size: var(--font_16);
+  @media screen and (max-width: 488px) {
+    font-weight: 500;
+    font-size: var(--font_12);
+  }
 }

@@ -11,9 +11,6 @@ $root: '.icon';
     width: unset;
     height: unset;
   }
-  &.primary {
-    stroke: rgb(var(--colors_gray_40));
-  }
   &.neutral {
     stroke: rgb(var(--colors_white));
   }

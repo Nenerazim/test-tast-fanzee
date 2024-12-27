@@ -1,22 +1,28 @@
-.footer {
-  align-items: center;
+.tag-list {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 31px 48px;
-  background: rgb(var(--colors_gray_41));
-  gap: 0.25rem;
-  .info {
-    font-size: var(--font_14);
+  gap: 8px;
+  .tag {
+    padding: 3px 6px;
+    font-size: var(--font_11);
     font-weight: 500;
-    .under-line {
-      margin-bottom: 4px;
-      text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 0.5rem;
+    .text {
+      line-height: 1;
     }
-  }
-  @media screen and (max-width: 476px) {
-    padding: 0.75rem 1rem;
-    flex-direction: column;
-    align-items: unset;
+    &.green {
+      background: rgb(var(--color_green));
+    }
+    &.blue {
+      background: rgb(var(--color_blue));
+    }
+    &.violet {
+      background: rgb(var(--color_violet));
+    }
+    &.red {
+      background: rgb(var(--color_red));
+    }
   }
 }

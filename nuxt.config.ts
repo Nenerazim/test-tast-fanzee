@@ -3,7 +3,7 @@ import {srcDir, buildDir, dir, typescript, devServer, modules, plugins, css, run
 export default defineNuxtConfig({
   app: {
     head: {
-      link: [{rel: 'stylesheet', href: '/fonts/fonts.css', media: 'print', onload: "this.media='all'"}]
+      link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.webp'}]
     },
     pageTransition: {name: 'page', mode: 'out-in'}
   },
@@ -30,12 +30,7 @@ export default defineNuxtConfig({
   },
 
   devServer,
-
-  experimental: {
-    asyncContext: true
-  },
-
   vite,
   typescript,
-  compatibilityDate: '2024-12-26'
+  compatibilityDate: '2024-12-27',
 });

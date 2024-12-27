@@ -4,6 +4,7 @@
   </NuxtLayout>
 </template>
 
+<script setup lang="ts"></script>
 <style lang="scss" scoped>
 .page-enter-active,
 .page-leave-active {
@@ -15,5 +16,3 @@
   filter: blur(1rem);
 }
 </style>
-<script setup lang="ts">
-</script>

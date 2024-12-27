@@ -4,7 +4,7 @@ import type {NitroFetchOptions} from 'nitropack';
 import {appendResponseHeader} from 'h3';
 import {useRequestEvent, useRequestHeaders} from '#app';
 
-export type BodyData = BodyInit | Record<string, any> | null | undefined;
+export type BodyData = BodyInit | Record<string, unknown> | null | undefined;
 
 export interface RequestOptions extends NitroFetchOptions<string> {
   passCookie?: boolean;
@@ -22,7 +22,10 @@ export class HttpRequest {
   private async instance<T = unknown>(url: string, options: RequestOptions) {
     const event = useRequestEvent();
     const passCookie = options.passCookie ?? this.defaultOptions.passCookie ?? true;
-    const req: FetchResponse<string | Blob | ArrayBuffer | T | ReadableStream<Uint8Array>> = await $fetch.raw(this.baseUrl + url, this.prepareOptions(options));
+    const req: FetchResponse<string | Blob | ArrayBuffer | T | ReadableStream<Uint8Array>> = await $fetch.raw(
+      this.baseUrl + url,
+      this.prepareOptions(options)
+    );
     if (passCookie && event) {
       const cookies = (req.headers.get('set-cookie') || '').split(',');
       for (const cookie of cookies) {

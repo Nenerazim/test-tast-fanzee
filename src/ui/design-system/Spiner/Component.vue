@@ -12,27 +12,10 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="spinner-container" :style="{height: props.height, width: props.width}">
-    <div class="spinner" />
-  </div>
+  <div class="spinner" :style="{height: props.height, width: props.width}" />
 </template>
 
 <style lang="scss" scoped>
-.spinner-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .spinner {
-    width: 48px;
-    height: 48px;
-    border: 5px solid rgb(var(--colors_blue));
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-  }
-}
+@use 'sass:meta';
+@include meta.load-css('style');
 </style>

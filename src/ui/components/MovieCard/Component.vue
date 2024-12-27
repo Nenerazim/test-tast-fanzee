@@ -1,11 +1,20 @@
+<script lang="ts" setup>
+import {TagList} from '$components/shared/TagList';
+import {Image} from '$design';
+import type {IMovieEntity} from '$domain/abstracts/Movie';
+
+defineProps<{card: IMovieEntity}>();
+</script>
+
 <template>
-  <footer class="footer">
-    <h5>Test Task, 2022</h5>
+  <NuxtLink :to="`/movie/${card.id}`" class="card-movie-container">
+    <Image :src="card.poster" :alt="card.name" />
     <div class="info">
-      <a href="tel:518-363-2171" class="under-line"> 518-363-2171 </a>
-      <p>91 Park St. Fairhope, AL 36532</p>
+      <h2>{{ card.name }}</h2>
+      <p class="card-des">{{ card.description }}</p>
     </div>
-  </footer>
+    <TagList :score="card.rating" :genre="card.genre" :duration="card.duration" />
+  </NuxtLink>
 </template>
 
 <style lang="scss" scoped>

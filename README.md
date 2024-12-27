@@ -1,75 +1,62 @@
-# Nuxt Minimal Starter
+# Preton telegram mini-app game v2
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Technologies
 
-## Setup
+Nuxt 3 + Vue 3, typescript, scss, husky, commitizen + git-cz, npm package manager
 
-Make sure to install dependencies:
+## Installation
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+```
+#install dependencies
+npm i
 ```
 
-## Development Server
+## Environment variables
 
-Start the development server on `http://localhost:3000`:
+```
+#dev
+PUBLIC_BACK_API_URL="backend api-url"
+PUBLIC_FRONT_URL="frontend-api-url"
+```
 
-```bash
-# npm
+## Dev
+
+```
+#dev
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Build
 
-Build the application for production:
-
-```bash
-# npm
+```
+#build
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+## Code style, typechecking and formatting
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```
+#typecheck
+npm run check
+#lint
+npm run lint
+#lint + format (prettier)
+npm run format
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Work with repo
+
+```
+#do not use IDE to commit your changes
+git add .
+#commit with git-cz + commitizen
+npm run commit
+#after checking your code with husky (ts check and lint) you can push
+git push
+```
+
+## Architecture
+
+<a href="https://drive.google.com/file/d/1rd76E0uF7OQbsAF4ZRKvWsdtFAWRvVCH/view?usp=sharing" target="_blank">
+    <img src="./docs/architecture.jpg" width="100%" alt="architecture">
+</a>

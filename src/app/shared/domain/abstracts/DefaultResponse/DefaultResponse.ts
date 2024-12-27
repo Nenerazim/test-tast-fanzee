@@ -1,4 +1,4 @@
 export interface DefaultResponse<T> {
-    data: T
-    status: string
+  data: T;
+  status: string;
 }
