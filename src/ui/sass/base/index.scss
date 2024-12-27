@@ -1,0 +1,4 @@
+@use 'sass:meta';
+
+@include meta.load-css('animations');
+@include meta.load-css('typography');
